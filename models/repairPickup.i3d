@@ -82,7 +82,7 @@
       </TransformGroup>
       <Shape name="Display1" translation="0.785701 1.56613 -0.668747" shapeId="8" clipDistance="300" nodeId="28" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="7,8"/>
       <TransformGroup name="HeckAchse" translation="0 1.77657 -2.50359" rotation="130 -0 0" nodeId="29">
-        <Shape name="Heckklappe" translation="0.00154238 -0.0937592 -0.039325" shapeId="9" compoundChild="true" collisionFilterGroup="0xffffffff" collisionFilterMask="0xffffffff" density="0.0001" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
+        <Shape name="Heckklappe" translation="0.00154238 -0.0937592 -0.039325" shapeId="9" kinematic="true" compoundChild="true" collisionFilterGroup="0xffffffff" collisionFilterMask="0xffffffff" density="0.0001" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
           <TransformGroup name="lightsBack" translation="-0.00154238 -1.68281 2.54291" nodeId="31">
             <TransformGroup name="sharedLights.001" nodeId="32">
               <TransformGroup name="backLightLeft" translation="0.407071 1.40683 -2.50609" rotation="-90 -180 2.50448e-06" nodeId="33">
