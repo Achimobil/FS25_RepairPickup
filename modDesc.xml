@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92">
+	<author>Achimobil</author>
+	<version>0.1.0.0</version>
+	<title>
+		<de>Feld Reparatur Pickup</de>
+		<en>Field Repair Pickup</en>
+	</title>
+	<description>
+		<de><![CDATA[Der 2017er Pickup mit einem Feld Reparatur Aufbau. 
+
+Ein 4000l Dieseltank zum Auftanken auf dem Feld ist vorhanden.
+Reparatur wird normal per Geld abgerechnet.
+Auftanken bei zugeklapptem Fahrzeug auf der rechten Seite.
+Betanken auf dem Feld auf der linken Seite.
+Reparatur bei aufgeklapptem Fahrzeug hinten.
+Farbwahl für Chassis, Felgen und Aufbau.
+
+Leistung: 300PS
+Max: 120 km/h
+Tank 4.000l Diesel
+Preis 45.000 €
+
+
+Upload auf anderen Seiten außer dem ModHub ist verboten und somit illegal, Verlinkung nur mit Original-Downloadlink. KEIN Ersatzlink!
+Das Verändern oder erneutes hochladen, ob ganz oder in Teilen, ist nicht gestattet!
+
+Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
+]]></de>
+		<en><![CDATA[The 2017 pickup with a field repair extension. 
+
+A 4000l diesel tank for refuelling in the field is available.
+Repairs are charged by money.
+Refuelling with the vehicle closed on the right side.
+Refuelling in the field on the left side.
+Repair with the vehicle open at the rear.
+Choice of colours for chassis, rims and body.
+
+Power: 300PS
+Max: 120 km/h
+Tank 4.000l diesel
+Price 45.000 $
+
+
+Uploading to sites other than ModHub is prohibited and therefore illegal, linking only with original download link. NO substitute link!
+Modifying and re-uploading in whole or in part is not allowed!
+
+Bugs and suggestions welcome on <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
+]]></en>
+	</description>
+	<iconFilename>icon_FieldRepairPickup.png</iconFilename>
+	<multiplayer supported="true"/>
+	<storeItems>
+		<storeItem xmlFilename="pickup2017.xml"/>
+	</storeItems>
+	<specializations>
+		<specialization name="repairCar" className="RepairCarSpecialization" filename="scripts/repairCarSpecialization.lua"/>
+	</specializations>	
+	<vehicleTypes>
+		<type name="fuelCar" parent="car" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle"/>
+			<specialization name="repairCar"/>
+		</type>
+	</vehicleTypes>
+		
+	<l10n>
+		<text name="turnRepairOn">
+			<de>Reparatur einschalten</de>
+			<en>Activate repair</en>
+		</text>
+		<text name="turnRepairOff">
+			<de>Reparatur ausschalten</de>
+			<en>Deactivate repair</en>
+		</text>
+		<text name="repair_payType">
+			<de>Reparatur bezahlen mit</de>
+			<en>Repair paid by</en>
+		</text>
+		<text name="repairForMoney">
+			<de>Geld</de>
+			<en>Money</en>
+		</text>
+		<text name="function_car_fieldservice">
+			<de>Fahrzeug zur Feld Reparatur</de>
+			<en>Vehicle for Field Service</en>
+		</text>
+	</l10n>
+</modDesc>

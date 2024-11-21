@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="repairPickup" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="4" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="11" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="15" filename="textures/FarmerTools.dds"/>
+    <File fileId="19" filename="textures/ServiceLogo.dds"/>
+    <File fileId="1" filename="textures/specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Aufbau_mat_glassClear01_mat" materialId="7" specularColor="0.501961 1 0" customShaderId="2">
+      <Custommap name="detailSpecular" fileId="3"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="5"/>
+      <CustomParameter name="colorScale" value="0.57 0.57 0.57"/>
+    </Material>
+    <Material name="Aufbau_mat_plasticPainted_mat" materialId="1" customShaderId="2">
+      <Glossmap fileId="1"/>
+      <Custommap name="detailSpecular" fileId="3"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="5"/>
+      <CustomParameter name="colorScale" value="0 0.4057 0.1006"/>
+    </Material>
+    <Material name="Aufbau_mat_plasticPaintedShinyGray_mat" materialId="8" specularColor="0.501961 1 0" customShaderId="2">
+      <Custommap name="detailSpecular" fileId="3"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="5"/>
+      <CustomParameter name="colorScale" value="0.57 0.57 0.57"/>
+    </Material>
+    <Material name="logoDecal_mat_metalPaintedGray_mat" materialId="5" specularColor="0.501961 1 0" customShaderId="2" customShaderVariation="vmaskUV2">
+      <Texture fileId="15"/>
+    </Material>
+    <Material name="Scharnier_mat_chrome_mat" materialId="2" specularColor="0.501961 1 0" customShaderId="2">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="12"/>
+    </Material>
+    <Material name="Scharnier_mat_fabric2Gray_mat" materialId="3" specularColor="0.501961 1 0" customShaderId="2">
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+    </Material>
+    <Material name="Scharnier_mat_fabric4Beige_mat" materialId="4" specularColor="0.501961 1 0" customShaderId="2">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="4"/>
+      <Custommap name="detailDiffuse" fileId="12"/>
+    </Material>
+    <Material name="ServiceDecal_mat_metalPaintedGray_mat" materialId="6" specularColor="0.501961 1 0" customShaderId="2" customShaderVariation="vmaskUV2">
+      <Texture fileId="19"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="repairPickup.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="aufbau" shapeId="1" clipDistance="300" nodeId="19" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
+      <Shape name="Cylinder" translation="0 1.77657 -2.50359" rotation="0 -0 -90" shapeId="2" clipDistance="50" nodeId="20" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="2,3">
+        <TransformGroup name="StuetzAchse" translation="0.0894027 0.651571 0.0173392" rotation="0 -0 90" nodeId="21">
+          <Shape name="stuetze" translation="0.0025003 0.0711982 -0.0386131" rotation="-28.2822 -0 0" shapeId="3" nodeId="22" castsShadows="false" receiveShadows="false" buildNavMeshMask="0xff" materialIds="2,4"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="Decals" nodeId="23">
+        <Shape name="LogoDecalLeft" translation="0.001 0 0" rotation="90 -0 0" scale="0.01 0.01 0.01" shapeId="4" clipDistance="50" nodeId="24" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="5"/>
+        <Shape name="LogoDecalRight" translation="-0.001 0 0" rotation="90 -0 0" scale="0.01 0.01 0.01" shapeId="5" clipDistance="50" nodeId="25" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="5"/>
+        <Shape name="ServiceDecalLeft" translation="0.001 0 0" shapeId="6" clipDistance="50" nodeId="26" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="6"/>
+        <Shape name="ServiceDecalRight" translation="-0.001 0 0" shapeId="7" clipDistance="50" nodeId="27" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="6"/>
+      </TransformGroup>
+      <Shape name="Display1" translation="0.785701 1.56613 -0.668747" shapeId="8" clipDistance="300" nodeId="28" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="7,8"/>
+      <TransformGroup name="HeckAchse" translation="0 1.77657 -2.50359" rotation="130 -0 0" nodeId="29">
+        <Shape name="Heckklappe" translation="0.00154238 -0.0937592 -0.039325" shapeId="9" compoundChild="true" collisionFilterGroup="0xffffffff" collisionFilterMask="0xffffffff" density="0.0001" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
+          <TransformGroup name="lightsBack" translation="-0.00154238 -1.68281 2.54291" nodeId="31">
+            <TransformGroup name="sharedLights.001" nodeId="32">
+              <TransformGroup name="backLightLeft" translation="0.407071 1.40683 -2.50609" rotation="-90 -180 2.50448e-06" nodeId="33">
+                <Light name="backLightLeft1" rotation="1.01308e-05 105 -90" nodeId="34" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+              </TransformGroup>
+              <TransformGroup name="backLightRight" translation="-0.397702 1.40683 -2.50609" rotation="-90 180 -2.50448e-06" nodeId="35">
+                <Light name="backLightRight1" rotation="2.94839e-05 105 -90" nodeId="36" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="lights" nodeId="37">
+        <TransformGroup name="sharedLights" nodeId="38">
+          <TransformGroup name="innerLightLeft" translation="0.657071 1.50683 -1.591" rotation="-90 90 0" nodeId="39">
+            <Light name="innerLightLeft1" translation="0 0 -2.87215e-08" rotation="-2.50448e-06 80 -90" nodeId="40" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
+          </TransformGroup>
+          <TransformGroup name="innerLightRight" translation="-0.647702 1.50683 -1.591" rotation="-90 -90 0" nodeId="41">
+            <Light name="innerLightRight1" translation="0 -1.19209e-07 2.13523e-08" rotation="1.69272e-05 80 -90" nodeId="42" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

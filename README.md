@@ -1,4 +1,6 @@
 # FS22_RepairPickup
+Mit Build.cmd kann man den Mod als zip zusammenpacken, wenn man 7-zip installiert hat.
+Verwendung einer Version aus GitHub ist auf eigene Gefahr.
 
 # ModHub
 comming soon

@@ -1,0 +1,9 @@
+*.cmd
+*.txt
+*.md
+.git*
+*.png
+*.zip
+store\*.png
+images
+SourceModels
