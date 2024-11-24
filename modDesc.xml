@@ -5,6 +5,7 @@
 	<title>
 		<de>Feld Reparatur Pickup</de>
 		<en>Field Repair Pickup</en>
+		<en>Saha Onarım Pikabı</en>
 	</title>
 	<description>
 		<de><![CDATA[Der 2017er Pickup mit einem Feld Reparatur Aufbau. 
@@ -68,22 +69,27 @@ Bugs and suggestions welcome on <a href="https://github.com/Achimobil/FS25_Repai
 		<text name="turnRepairOn">
 			<de>Reparatur einschalten</de>
 			<en>Activate repair</en>
+			<tr>Onarımı etkinleştir</tr>
 		</text>
 		<text name="turnRepairOff">
 			<de>Reparatur ausschalten</de>
 			<en>Deactivate repair</en>
+			<tr>Onarımı kapat</tr>
 		</text>
 		<text name="repair_payType">
 			<de>Reparatur bezahlen mit</de>
 			<en>Repair paid by</en>
+			<tr>Onarım şunun tarafından ödendi</tr>
 		</text>
 		<text name="repairForMoney">
 			<de>Geld</de>
 			<en>Money</en>
+			<tr>Para</tr>
 		</text>
 		<text name="function_car_fieldservice">
 			<de>Fahrzeug zur Feld Reparatur</de>
 			<en>Vehicle for Field Service</en>
+			<tr>Saha Hizmeti için Araç</tr>
 		</text>
 	</l10n>
 </modDesc>
