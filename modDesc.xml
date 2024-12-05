@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="92">
-	<author>Achimobil</author>
+<modDesc descVersion="93">
+    <author>Achimobil</author>
 	<version>1.0.0.0</version>
-	<title>
-		<de>Feld Reparatur Pickup</de>
-		<en>Field Repair Pickup</en>
-	</title>
-	<description>
-		<de><![CDATA[Der 2017er Pickup mit einem Feld Reparatur Aufbau. 
+    <title>
+        <de>Feld Reparatur Pickup</de>
+        <en>Field Repair Pickup</en>
+        <en>Saha Onarım Pikabı</en>
+    </title>
+    <description>
+        <de><![CDATA[Der 2017er Pickup mit einem Feld Reparatur Aufbau. 
 
 Ein 4000l Dieseltank zum Auftanken auf dem Feld ist vorhanden.
 Reparatur wird normal per Geld abgerechnet.
@@ -15,6 +16,7 @@ Auftanken bei zugeklapptem Fahrzeug auf der rechten Seite.
 Betanken auf dem Feld auf der linken Seite.
 Reparatur bei aufgeklapptem Fahrzeug hinten.
 Farbwahl für Chassis, Felgen und Aufbau.
+Es ist auch ein kleiner Hochdruckreiniger zum putze der Scheiben im Kofferraum verbaut.
 
 Leistung: 300PS
 Max: 120 km/h
@@ -27,7 +29,7 @@ Das Verändern oder erneutes hochladen, ob ganz oder in Teilen, ist nicht gestat
 
 Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
 ]]></de>
-		<en><![CDATA[The 2017 pickup with a field repair extension. 
+        <en><![CDATA[The 2017 pickup with a field repair extension. 
 
 A 4000l diesel tank for refuelling in the field is available.
 Repairs are charged by money.
@@ -35,6 +37,7 @@ Refuelling with the vehicle closed on the right side.
 Refuelling in the field on the left side.
 Repair with the vehicle open at the rear.
 Choice of colours for chassis, rims and body.
+There is also a small high-pressure cleaner for cleaning the windows in the boot.
 
 Power: 300PS
 Max: 120 km/h
@@ -47,43 +50,49 @@ Modifying and re-uploading in whole or in part is not allowed!
 
 Bugs and suggestions welcome on <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
 ]]></en>
-	</description>
-	<iconFilename>icon_FieldRepairPickup.png</iconFilename>
-	<multiplayer supported="true"/>
-	<storeItems>
-		<storeItem xmlFilename="pickup2017.xml"/>
-	</storeItems>
-	<specializations>
-		<specialization name="repairCar" className="RepairCarSpecialization" filename="scripts/repairCarSpecialization.lua"/>
-	</specializations>	
-	<vehicleTypes>
-		<type name="fuelCar" parent="car" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
-			<specialization name="fillVolume" />
-			<specialization name="fillTriggerVehicle"/>
-			<specialization name="repairCar"/>
-		</type>
-	</vehicleTypes>
-		
-	<l10n>
-		<text name="turnRepairOn">
-			<de>Reparatur einschalten</de>
-			<en>Activate repair</en>
-		</text>
-		<text name="turnRepairOff">
-			<de>Reparatur ausschalten</de>
-			<en>Deactivate repair</en>
-		</text>
-		<text name="repair_payType">
-			<de>Reparatur bezahlen mit</de>
-			<en>Repair paid by</en>
-		</text>
-		<text name="repairForMoney">
-			<de>Geld</de>
-			<en>Money</en>
-		</text>
-		<text name="function_car_fieldservice">
-			<de>Fahrzeug zur Feld Reparatur</de>
-			<en>Vehicle for Field Service</en>
-		</text>
-	</l10n>
+    </description>
+    <iconFilename>icon_FieldRepairPickup.png</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="pickup2017.xml"/>
+    </storeItems>
+    <specializations>
+        <specialization name="repairCar" className="RepairCarSpecialization" filename="scripts/repairCarSpecialization.lua"/>
+    </specializations>
+    <vehicleTypes>
+        <type name="fuelCar" parent="car" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="fillVolume"/>
+            <specialization name="fillTriggerVehicle"/>
+            <specialization name="repairCar"/>
+            <specialization name="highPressureWasher"/>
+        </type>
+    </vehicleTypes>
+
+    <l10n>
+        <text name="turnRepairOn">
+            <de>Reparatur einschalten</de>
+            <en>Activate repair</en>
+            <tr>Onarımı etkinleştir</tr>
+        </text>
+        <text name="turnRepairOff">
+            <de>Reparatur ausschalten</de>
+            <en>Deactivate repair</en>
+            <tr>Onarımı kapat</tr>
+        </text>
+        <text name="repair_payType">
+            <de>Reparatur bezahlen mit</de>
+            <en>Repair paid by</en>
+            <tr>Onarım şunun tarafından ödendi</tr>
+        </text>
+        <text name="repairForMoney">
+            <de>Geld</de>
+            <en>Money</en>
+            <tr>Para</tr>
+        </text>
+        <text name="function_car_fieldservice">
+            <de>Fahrzeug zur Feld Reparatur</de>
+            <en>Vehicle for Field Service</en>
+            <tr>Saha Hizmeti için Araç</tr>
+        </text>
+    </l10n>
 </modDesc>
