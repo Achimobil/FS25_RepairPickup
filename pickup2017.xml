@@ -340,6 +340,7 @@
 			<part node="stuetze" startTime="0.5" endTime="1" startRot="-160 0 90" endRot="0 0 90"/>
 			<part node="repairTriggerRight" startTime="0" endTime="1" startTrans="2.2 -3 0" endTrans="2.2 0 0"/>
 			<part node="repairTriggerLeft" startTime="0" endTime="1" startTrans="-2.2 -3 0" endTrans="-2.2 0 0"/>
+			<part node="playerTrigger" startTime="0" endTime="1" startTrans="0 -3 0" endTrans="0 0 0"/>
 			<part node="exactFillRootNodeDiesel" startTime="0" endTime="1" startTrans="-2.2 0 3" endTrans="-2.2 -3 3"/>
 			<sound template="metalClose" startTime="0.15" direction="-1" volumeScale="1.4" pitchScale="1.4" linkNode="backDoor"/>
 			<sound template="metalOpen" startTime="0.15" direction="1" volumeScale="1.6" pitchScale="0.8" linkNode="backDoor"/>
@@ -445,6 +446,26 @@
 	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
 	<washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
 	
+    <highPressureWasher>
+        <effects>
+            <effectNode effectClass="ExhaustEffect" node="0" linkNode="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.2" maxRpmScale="0.2" />
+        </effects>
+        <sounds>
+            <start template="pressureWasherStart" linkNode="0>" volumeScale="1.7"/>
+            <stop template="pressureWasherStop" linkNode="0>"   volumeScale="1.7"/>
+            <work template="pressureWasherRun01" linkNode="0>"  volumeScale="1.7"/>
+        </sounds>
+    </highPressureWasher>
+
+    <handToolHolders>
+        <handToolHolder>
+            <actions takeText="$l10n_action_takeHandTool" storeText="$l10n_action_returnHandTool"/>
+            <holder type="HPWLANCE" node="lanceNode"/>
+            <trigger node="playerTrigger" />
+            <spawnedHandToolFilename>$data/handTools/kaercher/hds9184M/hds9184MLance.xml</spawnedHandToolFilename>
+        </handToolHolder>
+    </handToolHolders>
+    
 	<repairCar>
 		<repairCarConfigurations title="$l10n_repair_payType">
 			<repairCarConfiguration name="$l10n_repairForMoney">
@@ -576,5 +597,7 @@
 		<i3dMapping id="numbersFillLevel" node="0>3|2|2"/>
 		<i3dMapping id="repairTriggerRight" node="0>3|3|0"/>
 		<i3dMapping id="repairTriggerLeft" node="0>3|3|1"/>
+        <i3dMapping id="lanceNode" node="0>4|0" />
+        <i3dMapping id="playerTrigger" node="0>4|1" />
 	</i3dMappings>
 </vehicle>
