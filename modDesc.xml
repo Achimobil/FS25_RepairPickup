@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="93">
+<modDesc descVersion="94">
     <author>Achimobil</author>
 	<version>1.0.0.0</version>
     <title>
@@ -39,7 +39,7 @@ Repair with the vehicle open at the rear.
 Choice of colours for chassis, rims and body.
 There is also a small high-pressure cleaner for cleaning the windows in the boot.
 
-Power: 300PS
+Power: 300HP
 Max: 120 km/h
 Tank 4.000l diesel
 Price 45.000 $
