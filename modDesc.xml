@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="94">
     <author>Achimobil</author>
-	<version>1.0.0.0</version>
+	<version>1.0.0.1</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -28,6 +28,9 @@ Upload auf anderen Seiten außer dem ModHub ist verboten und somit illegal, Verl
 Das Verändern oder erneutes hochladen, ob ganz oder in Teilen, ist nicht gestattet!
 
 Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
+
+Changelog
+1.0.0.1 - tr titel tags korrigiert
 ]]></de>
         <en><![CDATA[The 2017 pickup with a field repair extension. 
 
