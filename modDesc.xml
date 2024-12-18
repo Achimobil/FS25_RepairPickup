@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="93">
+<modDesc descVersion="94">
     <author>Achimobil</author>
-    <version>0.1.0.3</version>
+	<version>1.0.0.0</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -28,10 +28,6 @@ Upload auf anderen Seiten außer dem ModHub ist verboten und somit illegal, Verl
 Das Verändern oder erneutes hochladen, ob ganz oder in Teilen, ist nicht gestattet!
 
 Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
-Changelog
-
-0.1.0.1 - TR Translation von RuyaSavascisi hinzugefügt
-0.1.0.2 - Rückmeldungen Giants verarbeitet und Hochdruckreiniger verbaut
 ]]></de>
         <en><![CDATA[The 2017 pickup with a field repair extension. 
 
@@ -43,7 +39,7 @@ Repair with the vehicle open at the rear.
 Choice of colours for chassis, rims and body.
 There is also a small high-pressure cleaner for cleaning the windows in the boot.
 
-Power: 300PS
+Power: 300HP
 Max: 120 km/h
 Tank 4.000l diesel
 Price 45.000 $
