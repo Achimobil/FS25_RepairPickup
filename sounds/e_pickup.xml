@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <motorConfigurations>
+            <motorConfiguration>
+                <sounds>
+                    <motor template="engineMediumVintage" file="$data/vehicles/lizard/pickup2017/sounds/pickup2017_loop.gls" volumeScale="7.0">
+                        <volume indoor="0.8" outdoor="1"/>
+                        <lowpassGain indoor="0.3" outdoor="1"/>
+                    </motor>
+                    <motor template="cabinTractor_01" volumeScale="2" pitchScale="2" linkNodeOffset="0.4 1 0.7"/>
+                    <gearGroupLeverStart template="gearDisengaged"/>
+                    <gearGroupLeverEnd template="gearEngaged"/>
+                    <gearLeverStart template="gearDisengaged"/>
+                    <gearLeverEnd template="gearEngaged"/>
+                </sounds>
+            </motorConfiguration>
+            
+            <motorConfiguration>
+                <sounds>
+                    <motor filename="$data/sounds/vehicles/npc/electricNPC_Car_01.wav"
+                           indoorVolume="0.5" outdoorVolume="0.9" range="65" innerRange="1"
+                           indoorLowpassGain="1" outdoorLowpassGain="1"
+                           indoorLowpassCutoffFrequency="5000.0"
+                           indoorLowpassResonance="2.0"
+                           outdoorLowpassCutoffFrequency="5000.0"
+                           outdoorLowpassResonance="2.0">
+                        <pitch velocity="10" pitchOffset="0.4"/>
+                        <pitch velocity="15" pitchOffset="0.5"/>
+                        <pitch velocity="20" pitchOffset="0.6"/>
+                        <pitch velocity="25" pitchOffset="0.7"/>
+                        <pitch velocity="30" pitchOffset="0.8"/>
+                        <pitch velocity="35" pitchOffset="0.9"/>
+                        <pitch velocity="40" pitchOffset="1.0"/>
+                        <pitch velocity="80" pitchOffset="1.0"/>
+                    </motor>
+                </sounds>
+            </motorConfiguration>            
+        </motorConfigurations>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle" linkNodeOffset="0.4 1 0.7">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="80.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="80" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="80" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+            <hail template="hailInVehicle" linkNodeOffset="0.4 1 0.7" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="80" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="80" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="80" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="attach01" />
+            <hydraulic template="hydraulicOpen02" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound template="hornDefault" />
+    </honk>
+</sounds>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="96">
     <author>Achimobil</author>
-	<version>1.0.0.3</version>
+	<version>1.0.0.4</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -20,7 +20,7 @@ Es ist auch ein kleiner Hochdruckreiniger zum Putzen der Scheiben im Kofferraum 
 
 Leistung: 300PS
 Max: 120 km/h
-Tank: 4.000l Diesel
+Tank: 4.000l Diesel oder 77kw/h
 Preis: 45.000 €
 
 
@@ -31,7 +31,8 @@ Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_Repai
 
 Changelog
 1.0.0.1 - tr titel tags korrigiert
-1.0.0.2 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht
+1.0.0.3 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht
+1.0.0.4 - Pickup jetzt auch als Elektor Version erhältlich
 ]]></de>
         <en><![CDATA[The 2017 pickup with a field repair extension. 
 
@@ -45,7 +46,7 @@ There is also a small high-pressure cleaner for cleaning the windows in the boot
 
 Power: 300HP
 Max: 120 km/h
-Tank: 4.000l diesel
+Tank: 4.000l diesel or 77kw/h
 Price: 45.000 $
 
 
