@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="94">
+<modDesc descVersion="96">
     <author>Achimobil</author>
-	<version>1.0.0.2</version>
+	<version>1.0.0.3</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -31,6 +31,7 @@ Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_Repai
 
 Changelog
 1.0.0.1 - tr titel tags korrigiert
+1.0.0.2 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht
 ]]></de>
         <en><![CDATA[The 2017 pickup with a field repair extension. 
 
