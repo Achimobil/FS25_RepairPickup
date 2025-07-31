@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="96">
+<modDesc descVersion="97">
     <author>Achimobil</author>
-	<version>1.1.0.0</version>
+	<version>1.1.0.1</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -28,6 +28,8 @@ Upload auf anderen Seiten außer dem ModHub ist verboten und somit illegal, Verl
 Das Verändern oder erneutes Hochladen, ob ganz oder in Teilen, ist nicht gestattet!
 
 Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
+
+1.1.0.1 - Diesel wird im Gewicht nicht mehr berücksichtigt um nicht mehr Leistung zu brauchen
 
 Changelog 1.1.0.0
 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht

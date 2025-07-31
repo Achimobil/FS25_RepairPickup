@@ -272,7 +272,7 @@
                         <dashboard displayType="ROT" valueType="fillLevel" node="needleFuel" minRot="120" maxRot="-5" rotAxis="3" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
                         <exactFillRootNode node="exactFillRootNodeFuel"/>
                     </fillUnit>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000" updateMass="false">
                         <dashboard displayType="TEXT" valueType="fillLevel" node="numbersFillLevel" textColor="0.05 0.05 0.05 1" textSize="0.07" textMask="00000" font="DIGIT" textAlignment="RIGHT"/>
                         <exactFillRootNode node="exactFillRootNodeDiesel"/>
                     </fillUnit>
@@ -286,7 +286,7 @@
                         <exactFillRootNode node="exactFillRootNodeFuel"/>
                     </fillUnit>
                     
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000" updateMass="false">
                         <dashboard displayType="TEXT" valueType="fillLevel" node="numbersFillLevel" textColor="0.05 0.05 0.05 1" textSize="0.07" textMask="00000" font="DIGIT" textAlignment="RIGHT"/>
                         <exactFillRootNode node="exactFillRootNodeDiesel"/>
                     </fillUnit>
