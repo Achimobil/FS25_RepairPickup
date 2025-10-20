@@ -394,6 +394,8 @@
             <part node="repairTriggerLeft" startTime="0" endTime="1" startTrans="-2.2 -3 0" endTrans="-2.2 0 0"/>
             <part node="playerTrigger" startTime="0" endTime="1" startTrans="0 -4 0" endTrans="0 0 0"/>
             <part node="exactFillRootNodeDiesel" startTime="0" endTime="1" startTrans="-2.2 0 3" endTrans="-2.2 -3 3"/>
+            <part node="backLightLeft1" startTime="0" endTime="1" startVisibility="false" endVisibility="true"/>
+            <part node="backLightRight1" startTime="0" endTime="1" startVisibility="false" endVisibility="true"/>
             <sound template="metalClose" startTime="0.15" direction="-1" volumeScale="1.4" pitchScale="1.4" linkNode="backDoor"/>
             <sound template="metalOpen" startTime="0.15" direction="1" volumeScale="1.6" pitchScale="0.8" linkNode="backDoor"/>
             <sound template="hingeMedium" startTime="0.90" direction="-1" volumeScale="1.5" pitchScale="1.1" linkNode="backDoor"/>
