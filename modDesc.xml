@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="104">
     <author>Achimobil</author>
-	<version>1.1.0.3</version>
+	<version>1.1.0.4</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -32,6 +32,7 @@ Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_Repai
 1.1.0.1 - Diesel wird im Gewicht nicht mehr berücksichtigt um nicht mehr Leistung zu brauchen
 1.1.0.2 - Arbeitslichter gehen nun aus, wenn die Heckklappe zu ist und blenden somit nicht mehr in der Fronscheibe
 1.1.0.3 - Arbeitslichter mit Hilfe der Weekendfarmers richtig geschaltet
+1.1.0.4 - Heckklappe kann jetzt von außen geöffnet werden
 
 Changelog 1.1.0.0
 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht

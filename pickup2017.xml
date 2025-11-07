@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="fuelCar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+<vehicle type="fuelCar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
         <name>
@@ -517,6 +517,12 @@
         </repairCarConfigurations>
     </repairCar>
     
+    <externalVehicleControl>
+        <trigger node="foldingTrigger">
+            <function name="folding"/>
+        </trigger>
+    </externalVehicleControl>
+
     <i3dMappings>
         <i3dMapping id="pickup2017_main_component1" node="0>"/>
         <i3dMapping id="pickup2017_vis" node="0>0"/>
@@ -640,5 +646,6 @@
         <i3dMapping id="repairTriggerLeft" node="0>3|3|1"/>
         <i3dMapping id="lanceNode" node="0>4|0" />
         <i3dMapping id="playerTrigger" node="0>4|1" />
+        <i3dMapping id="foldingTrigger" node="0>4|2"/>
     </i3dMappings>
 </vehicle>
