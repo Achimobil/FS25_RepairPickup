@@ -272,7 +272,7 @@
                         <dashboard displayType="ROT" valueType="fillLevel" node="needleFuel" minRot="120" maxRot="-5" rotAxis="3" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
                         <exactFillRootNode node="exactFillRootNodeFuel"/>
                     </fillUnit>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000" updateMass="false">
                         <dashboard displayType="TEXT" valueType="fillLevel" node="numbersFillLevel" textColor="0.05 0.05 0.05 1" textSize="0.07" textMask="00000" font="DIGIT" textAlignment="RIGHT"/>
                         <exactFillRootNode node="exactFillRootNodeDiesel"/>
                     </fillUnit>
@@ -286,7 +286,7 @@
                         <exactFillRootNode node="exactFillRootNodeFuel"/>
                     </fillUnit>
                     
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="DIESEL" capacity="4000" updateMass="false">
                         <dashboard displayType="TEXT" valueType="fillLevel" node="numbersFillLevel" textColor="0.05 0.05 0.05 1" textSize="0.07" textMask="00000" font="DIGIT" textAlignment="RIGHT"/>
                         <exactFillRootNode node="exactFillRootNodeDiesel"/>
                     </fillUnit>
@@ -394,6 +394,8 @@
             <part node="repairTriggerLeft" startTime="0" endTime="1" startTrans="-2.2 -3 0" endTrans="-2.2 0 0"/>
             <part node="playerTrigger" startTime="0" endTime="1" startTrans="0 -4 0" endTrans="0 0 0"/>
             <part node="exactFillRootNodeDiesel" startTime="0" endTime="1" startTrans="-2.2 0 3" endTrans="-2.2 -3 3"/>
+            <part node="realBackLightLeft" startTime="0" endTime="1" startVisibility="false" endVisibility="true"/>
+            <part node="realBackLightRight" startTime="0" endTime="1" startVisibility="false" endVisibility="true"/>
             <sound template="metalClose" startTime="0.15" direction="-1" volumeScale="1.4" pitchScale="1.4" linkNode="backDoor"/>
             <sound template="metalOpen" startTime="0.15" direction="1" volumeScale="1.6" pitchScale="0.8" linkNode="backDoor"/>
             <sound template="hingeMedium" startTime="0.90" direction="-1" volumeScale="1.5" pitchScale="1.1" linkNode="backDoor"/>
@@ -619,9 +621,11 @@
         <i3dMapping id="HeckAchse" node="0>3|0|3"/>
         <i3dMapping id="stuetze" node="0>3|0|0|0"/>
         <i3dMapping id="backLightLeft" node="0>3|0|3|0|0|0|0"/>
+        <i3dMapping id="realBackLightLeft" node="0>3|0|3|0|0|0|0|0"/>
+        <i3dMapping id="backLightLeft1" node="0>3|0|3|0|0|0|0|0|0"/>
         <i3dMapping id="backLightRight" node="0>3|0|3|0|0|0|1"/>
-        <i3dMapping id="backLightLeft1" node="0>3|0|3|0|0|0|0|0"/>
-        <i3dMapping id="backLightRight1" node="0>3|0|3|0|0|0|1|0"/>
+        <i3dMapping id="realBackLightRight" node="0>3|0|3|0|0|0|1|0"/>
+        <i3dMapping id="backLightRight1" node="0>3|0|3|0|0|0|1|0|0"/>
         <i3dMapping id="innerLightLeft" node="0>3|0|4|0|0"/>
         <i3dMapping id="innerLightLeft1" node="0>3|0|4|0|0|0"/>
         <i3dMapping id="innerLightRight" node="0>3|0|4|0|1"/>

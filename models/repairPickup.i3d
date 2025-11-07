@@ -71,7 +71,7 @@
   </Shapes>
 
   <Scene>
-    <Shape name="aufbau" shapeId="1" static="true" compoundChild="true" collisionFilterGroup="0x318fa" collisionFilterMask="0x318fa" density="0.0001" clipDistance="300" nodeId="19" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
+    <Shape name="aufbau" translation="-0.0989732 0.0916866 0.0755077" shapeId="1" static="true" compoundChild="true" collisionFilterGroup="0x318fa" collisionFilterMask="0x318fa" density="0.0001" clipDistance="300" nodeId="19" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
       <Shape name="Cylinder" translation="0 1.77657 -2.50359" rotation="0 -0 -90" shapeId="2" clipDistance="50" nodeId="20" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="2,3">
         <TransformGroup name="StuetzAchse" translation="0.0894027 0.651571 0.0173392" rotation="0 -0 90" nodeId="21">
           <Shape name="stuetze" translation="0.0025003 0.0711982 -0.0386131" rotation="-28.2822 -0 0" shapeId="3" nodeId="22" castsShadows="false" receiveShadows="false" buildNavMeshMask="0xff" materialIds="2,4"/>
@@ -85,26 +85,30 @@
       </TransformGroup>
       <Shape name="Display1" translation="0.785701 1.56613 -0.668747" shapeId="8" clipDistance="300" nodeId="28" castsShadows="false" receiveShadows="true" buildNavMeshMask="0xff" materialIds="7,8"/>
       <TransformGroup name="HeckAchse" translation="0 1.77657 -2.50359" rotation="130 -0 0" nodeId="29">
-        <Shape name="Heckklappe" translation="0.00154238 -0.0937592 -0.039325" shapeId="9" static="true" compoundChild="true" collisionFilterGroup="0x318fa" collisionFilterMask="0x318fa" density="0.0001" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
-          <TransformGroup name="lightsBack" translation="-0.00154238 -1.68281 2.54291" nodeId="31">
+        <Shape name="Heckklappe" translation="0.00154238 -0.0937589 -0.0393248" shapeId="9" static="true" compoundChild="true" collisionFilterGroup="0x318fa" collisionFilterMask="0x318fa" density="0.0001" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="1">
+          <TransformGroup name="lightsBack" translation="-0.00154237 -1.68281 2.54292" nodeId="31">
             <TransformGroup name="sharedLights.001" nodeId="32">
               <TransformGroup name="backLightLeft" translation="0.407071 1.40683 -2.50609" rotation="-90 -180 2.50448e-06" nodeId="33">
-                <Light name="backLightLeft1" rotation="1.01308e-05 105 -90" clipDistance="75" nodeId="34" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+                <TransformGroup name="realBackLightLeft" rotation="1.70755e-06 -8.14222e-13 -1.62844e-12" nodeId="34">
+                  <Light name="backLightLeft1" rotation="-3.44596e-05 105 -90.0001" clipDistance="75" nodeId="35" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+                </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="backLightRight" translation="-0.397702 1.40683 -2.50609" rotation="-90 180 -2.50448e-06" nodeId="35">
-                <Light name="backLightRight1" rotation="2.94839e-05 105 -90" clipDistance="75" nodeId="36" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+              <TransformGroup name="backLightRight" translation="-0.397702 1.40683 -2.50609" rotation="-90 180 -2.50448e-06" nodeId="36">
+                <TransformGroup name="realBackLightRight" translation="0 0 -2.38419e-07" rotation="1.70755e-06 1.62844e-12 4.88533e-12" nodeId="37">
+                  <Light name="backLightRight1" translation="0 -1.19209e-07 -1.66893e-06" rotation="-1.49592e-05 105 -90" clipDistance="75" nodeId="38" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="15" coneAngle="90" dropOff="3.282"/>
+                </TransformGroup>
               </TransformGroup>
             </TransformGroup>
           </TransformGroup>
         </Shape>
       </TransformGroup>
-      <TransformGroup name="lights" nodeId="37">
-        <TransformGroup name="sharedLights" nodeId="38">
-          <TransformGroup name="innerLightLeft" translation="0.657071 1.50683 -1.591" rotation="-90 90 0" nodeId="39">
-            <Light name="innerLightLeft1" translation="0 0 -2.87215e-08" rotation="-2.50448e-06 80 -90" clipDistance="75" nodeId="40" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
+      <TransformGroup name="lights" nodeId="39">
+        <TransformGroup name="sharedLights" nodeId="40">
+          <TransformGroup name="innerLightLeft" translation="0.657071 1.50683 -1.591" rotation="-90 90 0" nodeId="41">
+            <Light name="innerLightLeft1" translation="0 0 -2.43952e-08" rotation="-2.50448e-06 80 -90" clipDistance="75" nodeId="42" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
           </TransformGroup>
-          <TransformGroup name="innerLightRight" translation="-0.647702 1.50683 -1.591" rotation="-90 -90 0" nodeId="41">
-            <Light name="innerLightRight1" translation="0 -1.19209e-07 2.13523e-08" rotation="1.69272e-05 80 -90" clipDistance="75" nodeId="42" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
+          <TransformGroup name="innerLightRight" translation="-0.647702 1.50683 -1.591" rotation="-90 -90 0" nodeId="43">
+            <Light name="innerLightRight1" translation="0 -1.19209e-07 2.03266e-08" rotation="1.69272e-05 80 -90" clipDistance="75" nodeId="44" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="2" coneAngle="145" dropOff="5"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
