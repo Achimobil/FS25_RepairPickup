@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="104">
     <author>Achimobil</author>
-	<version>1.1.0.4</version>
+	<version>1.2.0.0</version>
     <title>
         <de>Feld Reparatur Pickup</de>
         <en>Field Repair Pickup</en>
@@ -29,12 +29,14 @@ Das Verändern oder erneutes Hochladen, ob ganz oder in Teilen, ist nicht gestat
 
 Fehler und Anregungen gerne auf <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
 
-1.1.0.1 - Diesel wird im Gewicht nicht mehr berücksichtigt um nicht mehr Leistung zu brauchen
-1.1.0.2 - Arbeitslichter gehen nun aus, wenn die Heckklappe zu ist und blenden somit nicht mehr in der Fronscheibe
-1.1.0.3 - Arbeitslichter mit Hilfe der Weekendfarmers richtig geschaltet
-1.1.0.4 - Heckklappe kann jetzt von außen geöffnet werden
+Changelog 
+1.2.0.0
+- Diesel wird im Gewicht nicht mehr berücksichtigt um nicht mehr Leistung zu brauchen
+- Arbeitslichter gehen nun aus, wenn die Heckklappe zu ist und blenden somit nicht mehr in der Fronscheibe (Danke an T4xs)
+- Heckklappe kann jetzt von außen geöffnet werden
+- Beifahrer Kamera Position korrigiert
 
-Changelog 1.1.0.0
+1.1.0.0
 - Spanngurte entfernt, Deko eingebaut und Fueltrigger erhöht
 - Pickup jetzt auch als auf Elektro umgebaute Version erhältlich
 ]]></de>
@@ -59,7 +61,14 @@ Modifying and re-uploading in whole or in part is not allowed!
 
 Bugs and suggestions welcome on <a href="https://github.com/Achimobil/FS25_RepairPickup">GitHub</a>.
 
-Changelog 1.1.0.0
+Changelog
+1.2.0.0
+- Diesel fuel is no longer taken into the weight calculation to avoid increased power requirements.
+- Work lights now switch off when the backdoor is closed, thus preventing glare on the windshield (Thanks to T4xs).
+- Backdor can now be opened from the outside.
+- Passenger camera position corrected.
+
+1.1.0.0
 - Tension belts removed, deco added and fuel trigger increased
 - Pickup now also available as an electric version
 ]]></en>
