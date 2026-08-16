@@ -4,6 +4,9 @@
 .git*
 *.png
 *.zip
+*.code-workspace
+.vscode*
+.claude*
 store\*.png
 images
 SourceModels

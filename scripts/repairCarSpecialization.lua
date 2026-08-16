@@ -112,7 +112,7 @@ function RepairCarSpecialization:onLoad(savegame)
 		end
 		
 		self.xmlFile:iterate(baseXmlPath .. ".triggerNodes.triggerNode", 
-			function (index, triggerKey)
+			function (_, triggerKey)
 				local triggerNode = self.xmlFile:getValue(triggerKey .. "#node", nil, self.components, self.i3dMappings);
 				table.insert(spec.triggerNodes, triggerNode);
 				addTrigger(triggerNode, "repairTriggerCallback", self);
@@ -195,8 +195,7 @@ function RepairCarSpecialization:startRepairVehicles()
 	
 	if spec.numVehicleInTrigger > 0 then
 
-		local actionDone = false;
-		for vehicleRootNode, vehicleCount in pairs(spec.vehicleInTrigger) do
+		for vehicleRootNode, _ in pairs(spec.vehicleInTrigger) do
 			local vehicle = g_currentMission.nodeToObject[vehicleRootNode];
 			
 			if vehicle ~= nil and vehicle.getDamageAmount ~= nil then
@@ -220,14 +219,12 @@ function RepairCarSpecialization:startRepairVehicles()
 						if self:getFillUnitFillLevel(spec.fillUnitIndex) >= liter then
 							self:addFillUnitFillLevel(self:getOwnerFarmId(), spec.fillUnitIndex, -liter, spec.fillType, ToolType.UNDEFINED, nil);
 							vehicle:addDamageAmount(repairStep * -1, true);
-							actionDone = true;
 						end
 					elseif g_currentMission:getMoney(self.ownerFarmId) >= repairCosts then					
 						-- repair with money
 						self:writeToLog(true, "repair with money")
 						g_currentMission:addMoney(-repairCosts, self:getOwnerFarmId(), MoneyType.VEHICLE_REPAIR, true, true);
 						vehicle:addDamageAmount(repairStep * -1, true);
-						actionDone = true;
 					end
 				end
 			end
